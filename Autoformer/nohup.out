@@ -1,0 +1,94 @@
+2024-01-15:14:02:47,780 INFO     [utils.py:144] Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2024-01-15:14:02:47,780 INFO     [utils.py:147] Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2024-01-15:14:02:47,780 INFO     [utils.py:159] NumExpr defaulting to 8 threads.
+2024-01-15:14:12:38,662 INFO     [utils.py:144] Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2024-01-15:14:12:38,662 INFO     [utils.py:147] Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2024-01-15:14:12:38,662 INFO     [utils.py:159] NumExpr defaulting to 8 threads.
+Traceback (most recent call last):
+  File "/opt/data/private/xwj/ML/Autoformer/run.py", line 154, in <module>
+    main()
+  File "/opt/data/private/xwj/ML/Autoformer/run.py", line 118, in main
+    exp.train(setting)
+  File "/opt/data/private/xwj/ML/Autoformer/exp/exp_main.py", line 163, in train
+    test_loss = self.vali(test_data, test_loader, criterion)
+  File "/opt/data/private/xwj/ML/Autoformer/exp/exp_main.py", line 91, in vali
+    outputs, batch_y = self._predict(batch_x, batch_y, batch_x_mark, batch_y_mark)
+  File "/opt/data/private/xwj/ML/Autoformer/exp/exp_main.py", line 72, in _predict
+    outputs = _run_model()
+  File "/opt/data/private/xwj/ML/Autoformer/exp/exp_main.py", line 63, in _run_model
+    outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/data/private/xwj/ML/Autoformer/models/Transformer.py", line 64, in forward
+    enc_out, attns = self.encoder(enc_out, attn_mask=enc_self_mask)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/data/private/xwj/ML/Autoformer/layers/Transformer_EncDec.py", line 74, in forward
+    x, attn = attn_layer(x, attn_mask=attn_mask)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/data/private/xwj/ML/Autoformer/layers/Transformer_EncDec.py", line 49, in forward
+    y = self.dropout(self.activation(self.conv1(y.transpose(-1, 1))))
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 310, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 306, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 153438) is killed by signal: Killed. 
+Traceback (most recent call last):
+  File "/opt/data/private/xwj/ML/Autoformer/run.py", line 154, in <module>
+    main()
+  File "/opt/data/private/xwj/ML/Autoformer/run.py", line 118, in main
+    exp.train(setting)
+  File "/opt/data/private/xwj/ML/Autoformer/exp/exp_main.py", line 162, in train
+    vali_loss = self.vali(vali_data, vali_loader, criterion)
+  File "/opt/data/private/xwj/ML/Autoformer/exp/exp_main.py", line 91, in vali
+    outputs, batch_y = self._predict(batch_x, batch_y, batch_x_mark, batch_y_mark)
+  File "/opt/data/private/xwj/ML/Autoformer/exp/exp_main.py", line 72, in _predict
+    outputs = _run_model()
+  File "/opt/data/private/xwj/ML/Autoformer/exp/exp_main.py", line 63, in _run_model
+    outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/data/private/xwj/ML/Autoformer/models/Transformer.py", line 64, in forward
+    enc_out, attns = self.encoder(enc_out, attn_mask=enc_self_mask)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/data/private/xwj/ML/Autoformer/layers/Transformer_EncDec.py", line 74, in forward
+    x, attn = attn_layer(x, attn_mask=attn_mask)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/data/private/xwj/ML/Autoformer/layers/Transformer_EncDec.py", line 42, in forward
+    new_x, attn = self.attention(
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/data/private/xwj/ML/Autoformer/layers/SelfAttention_Family.py", line 160, in forward
+    values = self.value_projection(values).view(B, S, H, -1)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/root/anaconda3/envs/ett/lib/python3.9/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 151370) is killed by signal: Killed. 

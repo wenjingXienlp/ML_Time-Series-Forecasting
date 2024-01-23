@@ -1,0 +1,15 @@
+ETTh1_96_336_Transformer_ETTh1_ftM_sl96_ll48_pl336_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.0689674615859985, mae:0.8274497985839844
+
+ETTh1_96_336_Transformer_ETTh1_ftM_sl96_ll48_pl336_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_Exp_1  
+mse:1.377274513244629, mae:0.95225989818573
+
+ETTh1_96_336_Transformer_ETTh1_ftM_sl96_ll48_pl336_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_Exp_2  
+mse:1.1654397249221802, mae:0.8743026256561279
+
+ETTh1_96_336_Transformer_ETTh1_ftM_sl96_ll48_pl336_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_Exp_3  
+mse:1.329289197921753, mae:0.9298155307769775
+
+ETTh1_96_336_Transformer_ETTh1_ftM_sl96_ll48_pl336_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_Exp_4  
+mse:1.026672124862671, mae:0.8249914050102234
+
