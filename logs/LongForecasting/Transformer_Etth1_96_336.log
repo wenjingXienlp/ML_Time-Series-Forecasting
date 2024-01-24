@@ -1,0 +1,217 @@
+True
+Args in experiment:
+Namespace(activation='gelu', batch_size=64, c_out=7, checkpoints='/opt/data/private/xwj/ML/LTSF-Linear-main/NLinear_cpkts', d_ff=2048, d_layers=1, d_model=512, data='ETTh1', data_path='ETTh1.csv', dec_in=7, des='Exp', devices='0,1,2,3', distil=True, do_predict=False, dropout=0.05, e_layers=7, embed='timeF', embed_type=0, enc_in=7, factor=1, features='M', freq='h', gpu=0, individual=False, is_training=1, itr=5, label_len=48, learning_rate=0.005, loss='mse', lradj='type1', model='Transformer', model_id='ETTh1_96_336', moving_avg=25, n_heads=8, num_workers=10, output_attention=False, patience=3, pred_len=336, root_path='/opt/data/private/wtc_beifen/time_prediction/Autoformer/dataset/ETT-small', seq_len=96, target='OT', test_flop=False, train_epochs=10, train_only=False, use_amp=False, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+start training : ETTh1_96_336_Transformer_iter0
+train 8209
+val 2545
+test 2545
+	iters: 100, epoch: 1 | loss: 0.6339222
+	speed: 0.0534s/iter; left time: 63.0734s
+Epoch: 1 cost time: 6.246889114379883
+Epoch: 1, Steps: 128 | Train Loss: 0.9864992 Vali Loss: 1.9640996 Test Loss: 1.1364247
+Validation loss decreased (inf --> 1.964100).  Saving model ...
+Updating learning rate to 0.005
+	iters: 100, epoch: 2 | loss: 0.4575282
+	speed: 0.0865s/iter; left time: 91.0952s
+Epoch: 2 cost time: 4.925206661224365
+Epoch: 2, Steps: 128 | Train Loss: 0.4651816 Vali Loss: 1.9510028 Test Loss: 1.1770824
+Validation loss decreased (1.964100 --> 1.951003).  Saving model ...
+Updating learning rate to 0.0025
+	iters: 100, epoch: 3 | loss: 0.3864603
+	speed: 0.0938s/iter; left time: 86.7692s
+Epoch: 3 cost time: 5.118062496185303
+Epoch: 3, Steps: 128 | Train Loss: 0.3948652 Vali Loss: 1.9555694 Test Loss: 1.2059348
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.00125
+	iters: 100, epoch: 4 | loss: 0.3651138
+	speed: 0.0892s/iter; left time: 71.0631s
+Epoch: 4 cost time: 5.133352756500244
+Epoch: 4, Steps: 128 | Train Loss: 0.3729327 Vali Loss: 1.9350159 Test Loss: 1.2406993
+Validation loss decreased (1.951003 --> 1.935016).  Saving model ...
+Updating learning rate to 0.000625
+	iters: 100, epoch: 5 | loss: 0.3911999
+	speed: 0.0977s/iter; left time: 65.3308s
+Epoch: 5 cost time: 5.2117979526519775
+Epoch: 5, Steps: 128 | Train Loss: 0.3631949 Vali Loss: 1.9675514 Test Loss: 1.2383368
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0003125
+	iters: 100, epoch: 6 | loss: 0.3449731
+	speed: 0.0921s/iter; left time: 49.8106s
+Epoch: 6 cost time: 5.294541597366333
+Epoch: 6, Steps: 128 | Train Loss: 0.3584418 Vali Loss: 1.9978024 Test Loss: 1.2151474
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.00015625
+	iters: 100, epoch: 7 | loss: 0.3574342
+	speed: 0.0887s/iter; left time: 36.6305s
+Epoch: 7 cost time: 5.095884084701538
+Epoch: 7, Steps: 128 | Train Loss: 0.3556145 Vali Loss: 1.9949490 Test Loss: 1.2103275
+EarlyStopping counter: 3 out of 3
+Early stopping
+testing : ETTh1_96_336_Transformer_iter0
+test 2545
+mse:1.242136836051941, mae:0.8357671499252319
+Use GPU: cuda:0
+start training : ETTh1_96_336_Transformer_iter1
+train 8209
+val 2545
+test 2545
+	iters: 100, epoch: 1 | loss: 0.6443529
+	speed: 0.0379s/iter; left time: 44.7024s
+Epoch: 1 cost time: 4.691258668899536
+Epoch: 1, Steps: 128 | Train Loss: 1.0343641 Vali Loss: 1.9969741 Test Loss: 1.2243305
+Validation loss decreased (inf --> 1.996974).  Saving model ...
+Updating learning rate to 0.005
+	iters: 100, epoch: 2 | loss: 0.4750907
+	speed: 0.0980s/iter; left time: 103.1867s
+Epoch: 2 cost time: 5.003360748291016
+Epoch: 2, Steps: 128 | Train Loss: 0.4855304 Vali Loss: 1.8365027 Test Loss: 1.2615827
+Validation loss decreased (1.996974 --> 1.836503).  Saving model ...
+Updating learning rate to 0.0025
+	iters: 100, epoch: 3 | loss: 0.3784280
+	speed: 0.0987s/iter; left time: 91.3406s
+Epoch: 3 cost time: 4.794571876525879
+Epoch: 3, Steps: 128 | Train Loss: 0.4066980 Vali Loss: 1.9247775 Test Loss: 1.2373766
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.00125
+	iters: 100, epoch: 4 | loss: 0.3801238
+	speed: 0.0900s/iter; left time: 71.7572s
+Epoch: 4 cost time: 4.831073045730591
+Epoch: 4, Steps: 128 | Train Loss: 0.3829953 Vali Loss: 1.9590033 Test Loss: 1.2172455
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.000625
+	iters: 100, epoch: 5 | loss: 0.3748462
+	speed: 0.0923s/iter; left time: 61.7215s
+Epoch: 5 cost time: 5.139034032821655
+Epoch: 5, Steps: 128 | Train Loss: 0.3733129 Vali Loss: 1.9952390 Test Loss: 1.2102154
+EarlyStopping counter: 3 out of 3
+Early stopping
+testing : ETTh1_96_336_Transformer_iter1
+test 2545
+mse:1.2628949880599976, mae:0.8567885160446167
+Use GPU: cuda:0
+start training : ETTh1_96_336_Transformer_iter2
+train 8209
+val 2545
+test 2545
+	iters: 100, epoch: 1 | loss: 0.6785150
+	speed: 0.0389s/iter; left time: 45.9946s
+Epoch: 1 cost time: 4.862792491912842
+Epoch: 1, Steps: 128 | Train Loss: 1.0129235 Vali Loss: 1.8990105 Test Loss: 1.2784317
+Validation loss decreased (inf --> 1.899011).  Saving model ...
+Updating learning rate to 0.005
+	iters: 100, epoch: 2 | loss: 0.4552001
+	speed: 0.0960s/iter; left time: 101.1147s
+Epoch: 2 cost time: 4.914971828460693
+Epoch: 2, Steps: 128 | Train Loss: 0.4906186 Vali Loss: 2.0487051 Test Loss: 1.1584485
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0025
+	iters: 100, epoch: 3 | loss: 0.3879100
+	speed: 0.0938s/iter; left time: 86.7545s
+Epoch: 3 cost time: 4.788869619369507
+Epoch: 3, Steps: 128 | Train Loss: 0.4073252 Vali Loss: 1.8957398 Test Loss: 1.2368848
+Validation loss decreased (1.899011 --> 1.895740).  Saving model ...
+Updating learning rate to 0.00125
+	iters: 100, epoch: 4 | loss: 0.3776507
+	speed: 0.0952s/iter; left time: 75.8734s
+Epoch: 4 cost time: 4.657799959182739
+Epoch: 4, Steps: 128 | Train Loss: 0.3829133 Vali Loss: 1.9463043 Test Loss: 1.2499657
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.000625
+	iters: 100, epoch: 5 | loss: 0.3640754
+	speed: 0.0941s/iter; left time: 62.9362s
+Epoch: 5 cost time: 5.104175329208374
+Epoch: 5, Steps: 128 | Train Loss: 0.3720036 Vali Loss: 1.9660233 Test Loss: 1.2135205
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0003125
+	iters: 100, epoch: 6 | loss: 0.3536207
+	speed: 0.0989s/iter; left time: 53.5131s
+Epoch: 6 cost time: 5.055959701538086
+Epoch: 6, Steps: 128 | Train Loss: 0.3665431 Vali Loss: 1.9438870 Test Loss: 1.2160158
+EarlyStopping counter: 3 out of 3
+Early stopping
+testing : ETTh1_96_336_Transformer_iter2
+test 2545
+mse:1.2378281354904175, mae:0.8381900191307068
+Use GPU: cuda:0
+start training : ETTh1_96_336_Transformer_iter3
+train 8209
+val 2545
+test 2545
+	iters: 100, epoch: 1 | loss: 0.6899706
+	speed: 0.0396s/iter; left time: 46.7447s
+Epoch: 1 cost time: 4.991167783737183
+Epoch: 1, Steps: 128 | Train Loss: 1.0246338 Vali Loss: 2.0182445 Test Loss: 1.2417867
+Validation loss decreased (inf --> 2.018245).  Saving model ...
+Updating learning rate to 0.005
+	iters: 100, epoch: 2 | loss: 0.4510061
+	speed: 0.1032s/iter; left time: 108.6251s
+Epoch: 2 cost time: 4.8081214427948
+Epoch: 2, Steps: 128 | Train Loss: 0.4826441 Vali Loss: 2.0959425 Test Loss: 1.2081178
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0025
+	iters: 100, epoch: 3 | loss: 0.3925391
+	speed: 0.0961s/iter; left time: 88.9180s
+Epoch: 3 cost time: 5.154810190200806
+Epoch: 3, Steps: 128 | Train Loss: 0.4136538 Vali Loss: 1.9138143 Test Loss: 1.2251619
+Validation loss decreased (2.018245 --> 1.913814).  Saving model ...
+Updating learning rate to 0.00125
+	iters: 100, epoch: 4 | loss: 0.3798162
+	speed: 0.1007s/iter; left time: 80.2517s
+Epoch: 4 cost time: 4.807126522064209
+Epoch: 4, Steps: 128 | Train Loss: 0.3888057 Vali Loss: 1.9772137 Test Loss: 1.1881998
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.000625
+	iters: 100, epoch: 5 | loss: 0.3884671
+	speed: 0.0969s/iter; left time: 64.8346s
+Epoch: 5 cost time: 4.885808229446411
+Epoch: 5, Steps: 128 | Train Loss: 0.3772305 Vali Loss: 1.9898611 Test Loss: 1.1958349
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0003125
+	iters: 100, epoch: 6 | loss: 0.3956747
+	speed: 0.0976s/iter; left time: 52.8145s
+Epoch: 6 cost time: 4.622299671173096
+Epoch: 6, Steps: 128 | Train Loss: 0.3716576 Vali Loss: 1.9312903 Test Loss: 1.2370230
+EarlyStopping counter: 3 out of 3
+Early stopping
+testing : ETTh1_96_336_Transformer_iter3
+test 2545
+mse:1.2264432907104492, mae:0.8377034068107605
+Use GPU: cuda:0
+start training : ETTh1_96_336_Transformer_iter4
+train 8209
+val 2545
+test 2545
+	iters: 100, epoch: 1 | loss: 0.6122279
+	speed: 0.0387s/iter; left time: 45.7242s
+Epoch: 1 cost time: 5.111473083496094
+Epoch: 1, Steps: 128 | Train Loss: 0.9862221 Vali Loss: 2.1683841 Test Loss: 1.2228251
+Validation loss decreased (inf --> 2.168384).  Saving model ...
+Updating learning rate to 0.005
+	iters: 100, epoch: 2 | loss: 0.4593332
+	speed: 0.1001s/iter; left time: 105.4417s
+Epoch: 2 cost time: 5.106036901473999
+Epoch: 2, Steps: 128 | Train Loss: 0.4904138 Vali Loss: 1.8999383 Test Loss: 1.2793214
+Validation loss decreased (2.168384 --> 1.899938).  Saving model ...
+Updating learning rate to 0.0025
+	iters: 100, epoch: 3 | loss: 0.4043629
+	speed: 0.0940s/iter; left time: 86.9062s
+Epoch: 3 cost time: 4.813517808914185
+Epoch: 3, Steps: 128 | Train Loss: 0.4092369 Vali Loss: 1.9018852 Test Loss: 1.2603718
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.00125
+	iters: 100, epoch: 4 | loss: 0.3689082
+	speed: 0.0994s/iter; left time: 79.2444s
+Epoch: 4 cost time: 4.889654159545898
+Epoch: 4, Steps: 128 | Train Loss: 0.3868028 Vali Loss: 1.9541839 Test Loss: 1.1975734
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.000625
+	iters: 100, epoch: 5 | loss: 0.3814100
+	speed: 0.1041s/iter; left time: 69.6688s
+Epoch: 5 cost time: 4.77112889289856
+Epoch: 5, Steps: 128 | Train Loss: 0.3764055 Vali Loss: 1.9271576 Test Loss: 1.2155772
+EarlyStopping counter: 3 out of 3
+Early stopping
+testing : ETTh1_96_336_Transformer_iter4
+test 2545
+mse:1.279981255531311, mae:0.8632968664169312

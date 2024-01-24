@@ -1,0 +1,4 @@
+True
+Args in experiment:
+Namespace(activation='gelu', batch_size=64, c_out=7, checkpoints='/opt/data/private/xwj/ML/LTSF-Linear-main/NLinear_cpkts', d_ff=2048, d_layers=1, d_model=512, data='ETTh1', data_path='ETTh1.csv', dec_in=7, des='Exp', devices='0,1,2,3', distil=True, do_predict=False, dropout=0.05, e_layers=2, embed='timeF', embed_type=0, enc_in=7, factor=1, features='M', freq='h', gpu=0, individual=False, is_training=1, itr=5, label_len=48, learning_rate=0.005, loss='mse', lradj='type1', model='Reformer', model_id='ETTh1_96_96', moving_avg=25, n_heads=8, num_workers=10, output_attention=False, patience=3, pred_len=96, root_path='/opt/data/private/wtc_beifen/time_prediction/Autoformer/dataset/ETT-small', seq_len=96, target='OT', test_flop=False, train_epochs=10, train_only=False, use_amp=False, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
